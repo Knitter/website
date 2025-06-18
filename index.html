@@ -17,130 +17,227 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <div id="page">
-    <nav role="navigation">
+    <header class="hero-section">
         <div class="container-wrap">
-            <div class="social-menu">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <h1>S&eacute;rgio Lopes</h1>
+            <div class="hero-content">
+                <div class="row align-items-center">
+                    <div class="col-md-8 col-sm-12">
+                        <h1 class="name">S&eacute;rgio Lopes</h1>
                         <p class="tagline">Software Engineer & Teacher</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Portugal</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn btn-primary">Contact Me</a>
+                            <a href="cv.en.pdf" class="btn btn-secondary" title="Download CV (English)">
+                                <i class="fas fa-file-pdf"></i> Resume (EN)
+                            </a>
+                            <a href="cv.pt.pdf" class="btn btn-secondary" title="Download CV (Portuguese)">
+                                <i class="fas fa-file-pdf"></i> Resume (PT)
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-4 col-sm-12">
                         <div class="social-icons">
-                            <a href="cv.en.pdf" title="Download CV (English)" class="cv-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round"
-                                     class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-pdf">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M14 3v4a1 1 0 0 0 1 1h4"/>
-                                    <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4"/>
-                                    <path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6"/>
-                                    <path d="M17 18h2"/>
-                                    <path d="M20 15h-3v6"/>
-                                    <path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z"/>
-                                </svg>
-                                <span>EN</span>
+                            <a href="http://www.linkedin.com/in/sergiomnlopes" target="_blank" title="Connect on LinkedIn" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="cv.pt.pdf" title="Download CV (Portuguese)" class="cv-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round"
-                                     class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-pdf">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M14 3v4a1 1 0 0 0 1 1h4"/>
-                                    <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4"/>
-                                    <path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6"/>
-                                    <path d="M17 18h2"/>
-                                    <path d="M20 15h-3v6"/>
-                                    <path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z"/>
-                                </svg>
-                                <span>PT</span>
+                            <a href="https://github.com/Knitter" target="_blank" title="View GitHub Repositories" class="social-icon">
+                                <i class="fab fa-github"></i>
                             </a>
-                            <a href="http://www.linkedin.com/in/sergiomnlopes" target="_blank" title="Connect on LinkedIn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round"
-                                     class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M8 11v5"/>
-                                    <path d="M8 8v.01"/>
-                                    <path d="M12 16v-5"/>
-                                    <path d="M16 16v-3a2 2 0 1 0 -4 0"/>
-                                    <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"/>
-                                </svg>
+                            <a href="https://bitbucket.org/Knitter/workspace/repositories/" target="_blank" title="View Bitbucket Repositories" class="social-icon">
+                                <i class="fab fa-bitbucket"></i>
                             </a>
-                            <a href="https://github.com/Knitter" target="_blank" title="View GitHub Repositories">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round"
-                                     class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/>
-                                </svg>
-                            </a>
-                            <a href="https://bitbucket.org/Knitter/workspace/repositories/" target="_blank"
-                               title="View Bitbucket Repositories">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round"
-                                     class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bitbucket">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M3.648 4a.64 .64 0 0 0 -.64 .744l3.14 14.528c.07 .417 .43 .724 .852 .728h10a.644 .644 0 0 0 .642 -.539l3.35 -14.71a.641 .641 0 0 0 -.64 -.744l-16.704 -.007z"/>
-                                    <path d="M14 15h-4l-1 -6h6z"/>
-                                </svg>
-                            </a>
-                            <a href="https://notabug.org/Knitter" target="_blank" title="View NotABug Repositories">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round"
-                                     class="icon icon-tabler icons-tabler-outline icon-tabler-bug">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M9 9v-1a3 3 0 0 1 6 0v1"/>
-                                    <path d="M8 9h8a6 6 0 0 1 1 3v3a5 5 0 0 1 -10 0v-3a6 6 0 0 1 1 -3"/>
-                                    <path d="M3 13l4 0"/>
-                                    <path d="M17 13l4 0"/>
-                                    <path d="M12 20l0 -6"/>
-                                    <path d="M4 19l3.35 -2"/>
-                                    <path d="M20 19l-3.35 -2"/>
-                                    <path d="M4 7l3.75 2.4"/>
-                                    <path d="M20 7l-3.75 2.4"/>
-                                </svg>
+                            <a href="https://notabug.org/Knitter" target="_blank" title="View NotABug Repositories" class="social-icon">
+                                <i class="fas fa-bug"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </header>
+
+    <nav role="navigation" class="sticky-nav">
+        <div class="container-wrap">
+            <div class="nav-content">
+                <div class="logo">SL</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <div class="container-wrap main-content">
-        <div class="row">
-            <div class="col-12">
-                <div class="main">
-                    <div class="profile-section">
-                        <h2>About Me</h2>
-                        <p>
-                            I'm a software engineer and teacher from Portugal, working in client-server, desktop and mobile
-                            application development, being proficient with C, Java, JavaScript, C# and PHP programming
-                            languages, along with HTML5 and CSS.
-                        </p>
-                        
-                        <h2>Experience</h2>
-                        <p>
-                            I've worked on projects ranging from simple WEB applications in PHP, to full-blown enterprise
-                            projects mixing WEB and desktop technologies, integrating complex systems, developing mobile
-                            applications and their supporting server software.
-                        </p>
-                        
-                        <h2>Open Source</h2>
-                        <p>
+    <main>
+        <section id="about" class="section">
+            <div class="container-wrap" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="about-content">
+                            <p>
+                                I'm a software engineer and teacher from Portugal, working in client-server, desktop and mobile
+                                application development, being proficient with C, Java, JavaScript, C# and PHP programming
+                                languages, along with HTML5 and CSS.
+                            </p>
+                            <p>
+                                With a passion for creating efficient and user-friendly software solutions, I bring a blend of technical expertise and teaching experience to every project. I believe in writing clean, maintainable code and staying current with industry trends and best practices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section section-alt">
+            <div class="container-wrap" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Professional Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Software Engineer & Teacher</h3>
+                            <p class="timeline-period">Current Position</p>
+                            <p class="timeline-description">
+                                I've worked on projects ranging from simple WEB applications in PHP, to full-blown enterprise
+                                projects mixing WEB and desktop technologies, integrating complex systems, developing mobile
+                                applications and their supporting server software.
+                            </p>
+                            <p class="timeline-description">
+                                As a teacher, I share my knowledge and experience with students, helping them develop their programming skills and understanding of software development principles.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Freelance Developer</h3>
+                            <p class="timeline-period">Ongoing</p>
+                            <p class="timeline-description">
+                                Working with clients to deliver custom software solutions that meet their specific needs and requirements. Projects include web applications, mobile apps, and integrated systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container-wrap" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Skills & Expertise</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="skills-category">
+                            <h3>Programming Languages</h3>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">Java</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">C#</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">JavaScript</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">PHP</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">C</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skills-category">
+                            <h3>Technologies & Tools</h3>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">HTML5 & CSS3</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Mobile Development</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Client-Server Architecture</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">System Integration</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Database Design</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-alt">
+            <div class="container-wrap" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Open Source Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="projects-intro">
                             Along with non-free (the typical "commercial") projects, I also develop or help develop several
                             free software projects. Some of those projects can be seen in 
                             <a href="https://bitbucket.org/Knitter/workspace/repositories/" target="_blank">BitBucket</a>,
@@ -149,22 +246,215 @@
                         </p>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <i class="fas fa-code project-icon"></i>
+                                <h3>Project 1</h3>
+                            </div>
+                            <div class="project-body">
+                                <p>A sample open source project showcasing my skills in Java and system integration.</p>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">API</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <i class="fas fa-mobile-alt project-icon"></i>
+                                <h3>Project 2</h3>
+                            </div>
+                            <div class="project-body">
+                                <p>Mobile application development with cross-platform compatibility and backend integration.</p>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-tag">Mobile</span>
+                                <span class="project-tag">C#</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <i class="fas fa-globe project-icon"></i>
+                                <h3>Project 3</h3>
+                            </div>
+                            <div class="project-body">
+                                <p>Web application with responsive design and modern user interface components.</p>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    
+        </section>
+
+        <section id="education" class="section">
+            <div class="container-wrap" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Education & Certifications</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="education-item">
+                            <h3>Computer Science Degree</h3>
+                            <p class="education-institution">University Example</p>
+                            <p class="education-period">Graduated with honors</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="education-item">
+                            <h3>Professional Certifications</h3>
+                            <ul class="certification-list">
+                                <li>Advanced Programming Techniques</li>
+                                <li>Software Architecture Design</li>
+                                <li>Mobile Application Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-alt">
+            <div class="container-wrap" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <p>email@example.com</p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Portugal</p>
+                            </div>
+                            <div class="contact-social">
+                                <a href="http://www.linkedin.com/in/sergiomnlopes" target="_blank" class="contact-social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/Knitter" target="_blank" class="contact-social-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="container-wrap">
-            <div class="row copyright">
-                <div class="col-12">
-                    <p>
-                        <small class="block">© 2006 - 2025 S&eacute;rgio Lopes</small>
-                        <small>Icons from <a href="https://tabler.io/icons" target="_blank">tabler icons</a></small>
-                    </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-nav">
+                        <a href="#about">About</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#education">Education</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="copyright">
+                        <p>© 2006 - 2025 S&eacute;rgio Lopes. All rights reserved.</p>
+                        <p><small>Icons from <a href="https://fontawesome.com/" target="_blank">Font Awesome</a></small></p>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    // Initialize AOS animation library
+    AOS.init({
+        duration: 800,
+        easing: 'ease',
+        once: true
+    });
+
+    // Sticky navigation
+    window.addEventListener('scroll', function() {
+        const nav = document.querySelector('.sticky-nav');
+        if (window.scrollY > 100) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            navLinks.classList.remove('active');
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Scroll to top button
+    const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    });
+
+    scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
 </body>
 </html>
